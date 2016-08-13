@@ -29,7 +29,11 @@ function Sandbox () {
   callback(this);
 }
 
-var obj = new Sandbox('*', function() {});
+new Sandbox('dom', 'event', function(box) {
+  Sandbox('ajax', function(box) {
+
+  });
+});
 
 Sandbox.modules = {};
 
@@ -48,8 +52,3 @@ Sandbox.modules.ajax = function(box) {
   box.makeRequest = function() {};
   box.getResponse = function() {};
 }
-
-
-
-
-
