@@ -1,5 +1,7 @@
 'use strict';
 
+
+
 const MYAPP = {
   namespace(nmString) {
     let parts = nmString.split('.');
